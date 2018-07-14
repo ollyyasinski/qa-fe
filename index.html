@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Testing in Frontend</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>TESTING IN FRONT-END</h1>
+                <img height="315" src="img/testing.jpg" alt="Testing">
+                <p>
+                    <small>Created by
+                        <a href="https://github.com/rolling-scopes-school/ollyyasinski-2018Q1">Volha Yasinskaya</a>
+                    </small>
+                </p>
+            </section>
+            <section>
+                <h1>Agenda</h1>
+                <ul>
+                    <li>TESTING LEVELS</li>
+                    <ul>
+                        <li>Unit Testing</li>
+                        <li>Automation Testing</li>
+                        <li>Manual Testing</li>
+                    </ul>
+                    <li>Jira</li>
+                    <li>Helpful Tips</li>
+                </ul>
+            </section>
+            <section>
+                <section>
+                    <h1>TESTING LEVELS</h1>
+                    <img height="500" src="img/test-pyramid.png" alt="Testing Pyramid">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <img height="500" src="img/unit-testing.png" alt="Unit Testing">
+                    <p style="font-size: 16px; margin:0px">
+                    </p>
+                    <p>
+                        <b>Unit tesing</b> - you test the smallest part of the code - function in JS.</p>
+                </section>
+                <section>
+                    <h1>Why do we test?</h1>
+                </section>
+                <section>
+                    <h3>Why do we test?</h3>
+                    <ul>
+                        <li>Prevent issues</li>
+                        <li>Find bugs</li>
+                        <li>CI</li>
+                        <li>TDD</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>CI</h2>
+                    <img height="500" src="img/ci.png" alt="CI">
+                </section>
+            </section>
+            <section>
+                <h2>Automation Testing</h2>
+                <img height="500" src="img/Selenium.jpg" alt="Selenium">
+            </section>
+            <section>
+                <h2>Manual Testing</h2>
+                <img height="500" src="img/manual-tester.png" alt="Manula Testing">
+            </section>
+            <section>
+                <section>
+                    <h1>Bug Tracking Systems</h1>
+                </section>
+                <section>
+                    <p>
+                        <b>Jira </b> - bug tracking system by Atlassian</p>
+                    <img height="500" src="img/Jira.png" alt="Jira">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Typical Issues To Avoid</h1>
+                </section>
+                <section>
+                    <img height=500 src="img/back-arrow.png" alt="Back Arrow">
+                </section>
+                <section>
+                    <img height=500 src="img/datepicker.png" alt="Datepicker">
+                </section>
+                <section>
+                    <img height=500 src="img/form-validation.jpg" alt="Form Validation">
+                </section>
+                <section>
+                    <img height=500 src="img/length-validation.png" alt="Length Validation">
+                </section>
+                <section>
+                    <img height=500 src="img/spelling.jpg" alt="Spelling">
+                </section>
+                <section>
+                    <img height=500 src="img/a11y.png" alt="Accessibility">
+                </section>
+            </section>
+            <section>
+                <img height=500 src="img/ST-quote.jpg" alt="Steve Jobs Quote">
+            </section>
+            <section>
+                <img height=500 src="img/thank-you.jpg" alt="Thank you!">
+            </section>
+
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+            ]
+        });
+    </script>
+</body>
+
+</html>
